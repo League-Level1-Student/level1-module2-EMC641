@@ -15,6 +15,8 @@ package _02_smurf;
 public class Smurf {
 
 	private String name;
+	private String hatColor;
+	private String gender;
 
 	Smurf(String name) {
 		this.name = name;
@@ -29,16 +31,18 @@ public class Smurf {
 	}
 
 	// Papa Smurf wears a red hat, all the others are white.
-	public String getHatColor() {
+	public String getHatColor(String hatColor) {
 		// 3. Fill in this method
-		return "";
+		return name + " hat color is " + hatColor ;
 	}
 
 	// Smurfette is the only female Smurf.
-	public String isGirlOrBoy() {
+	public String isGirlOrBoy(String gender) {
 		// 4. Fill in this method
-		return "";
+		return name + " gender is " + gender;
 	}
+
+	
 
 }
 

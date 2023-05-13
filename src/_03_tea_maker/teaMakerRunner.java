@@ -5,10 +5,13 @@ public static void main(String[] args) {
 	
 	TeaBag teabag = new TeaBag("Green");
 	
-	teabag.getFlavor();
+
+	Kettle kettle = new Kettle();
 	
+	kettle.boil();
 	
-	//start doing water next time
+	Cup cup = new Cup();
 	
+	cup.makeTea(teabag, kettle.getWater() );
 }
 }
